@@ -10,8 +10,8 @@ function updateClock() {
     var currentSeconds = currentTime.getSeconds();
     var totalSeconds = (currentHours * 3600) + (currentMinutes * 60) + currentSeconds;
     // Calculate birth and death rate
-    var b = Math.round(totalSeconds * 4.443);
-    var d = Math.round(totalSeconds * 1.865);
+    var b = Math.round(totalSeconds * 104.443);
+    var d = Math.round(totalSeconds * 46.865);
     var births = b.toLocaleString();
     var deaths = d.toLocaleString();
 
@@ -79,8 +79,8 @@ function updateClock() {
     function now(year,month,date,hours,minutes,seconds){       
     startdatum = new Date(year,month,date,hours,minutes,seconds)
     
-    var now = 5600000000.0
-    var now2 = 5690000000.0
+    var now = 145600000000.0
+    var now2 = 147940000000.0
     var groeipercentage = (now2 - now) / now *100
     var groeiperseconde = (now * (groeipercentage/100))/365.0/24.0/60.0/60.0 
     nu = new Date ()                
